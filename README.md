@@ -18,27 +18,7 @@ npm i prisma -D
 npx i prisma
 npx prisma init
 npx prisma migrate dev
-
------
-https://www.npmjs.com/package/dotenv
-prisma.config.ts:
-
-import 'dotenv/config'
-import * as dotenv from 'dotenv'
-
-dotenv.config({ path: '/custom/path/to/.env' })
-dotenv.config()
-
--------
-
 npx prisma generate
-npm install @prisma/client
-npx prisma generate
-DATABASE_URL="postgresql://xxxx:xxxxx@localhost:5432/postgres"
-opcional https://www.npmjs.com/package/dotenv npm install dotenv --save ( si falla generate)
-
-```
-
 
 
 # Prod
@@ -54,16 +34,20 @@ opcional https://www.npmjs.com/package/dotenv npm install dotenv --save ( si fal
  2. Pagina oficial postgres + prisma [next + prisma +postgres](https://vercel.com/guides/nextjs-prisma-postgres)
  3. Pagina oficial mongo + prisma [next + prisma + mongo](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb/next-steps)
  4. video mongo + prisma [next + prisma + mongo](https://www.youtube.com/watch?v=QXxy8Uv1LnQ)
+ 3. prisma pagination next [next + prisma + pagination](https://www.prisma.io/docs/orm/prisma-client/queries/pagination)
+ 3. route cookies next [next + route +cookies](https://nextjs.org/docs/app/api-reference/file-conventions/route)
+3. validacion POST route esquemas yup [validacion + post + route](https://www.npmjs.com/package/yup)
  5. typeORM [typeORM](https://typeorm.io/)
  5. typeORM GitHub [typeORM + github](https://github.com/typeorm/typeorm)
 
- #pasos error
+# post postman
 
- 1. Install `dotenv`, and add `import "dotenv/config";` to your `prisma.config.ts` file to load environment variables from `.env`.
-2. Run prisma dev to start a local Prisma Postgres server.
-3. Define models in the schema.prisma file.
-4. Run prisma migrate dev to migrate your local Prisma Postgres database.
-5. Tip: Explore how you can extend the ORM with scalable connection pooling, global caching, and a managed serverless Postgres database. Read: https://pris.ly/cli/beyond-orm
+2fc336e9-418a-4aa8-90d7-fd9f91b69f5c
+post  http://localhost:3000/api/todos/
+json:
+ {
+    "description": "conquistar el mundo",
+    "complete": true
+}
 
-More information in our documentation:
-https://pris.ly/d/getting-started
+ 
