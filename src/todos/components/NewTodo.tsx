@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import { IoTrashOutline } from "react-icons/io5";
 import * as todosApi from '@/todos/helpers/todos';
 import { useRouter } from "next/navigation";
+import { addTodo, deleteCompleted } from "../actions/todo-action";
 
 
 
@@ -15,17 +16,20 @@ const [description, setDescription] = useState('');
 const onSubmit = async (e: FormEvent)=>{
     e.preventDefault();
     if(description.trim().length === 0) return;
-    todosApi.createTodo(description);
+
+    //todosApi.createTodo(description);
+    await addTodo(description);
     setDescription('');
-    router.refresh();
+    //router.refresh();
     //console.log('form submitted',description)
 }
 
-const deleteCompleted =async () => {
+// const deleteCompleted =async () => {
  
-    await todosApi.deleteCompletedTodos()
-     router.refresh();
-}
+//     await todosApi.deleteCompletedTodos()
+//      router.refresh();
+
+// }
 
 
   return (

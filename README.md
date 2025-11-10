@@ -17,7 +17,7 @@ npx prisma migrate dev
 npx prisma generate
 ```
 7. Ejecutar el SEED para [crear la base de datos local](localhost:3000/api/seed)
-
+http://localhost:3000/api/seed
 
 
 # Prisma commnads
@@ -54,9 +54,17 @@ npx prisma generate
  9. typeORM [typeORM](https://typeorm.io/)
  10. typeORM GitHub [typeORM + github](https://github.com/typeorm/typeorm)
 
+ #next
+2. novedades versiones next [blog novedades next](https://nextjs.org/blog)
+2. next server functions [next server functions](https://nextjs.org/docs/app/getting-started/updating-data)
+2. next server actions mutating data [serverAction mutating data](https://nextjs.org/learn/dashboard-app/mutating-data)
+2. next useoptimistic [use optimistic next](https://nextjs.org/docs/app/getting-started/updating-data#experimental-useoptimistic)
+2. next route segment config "export const dynamic = 'force-dynamic',export const revalidate = 0"[route config next](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config) 
+
 #otros
 2. reacts icons [npm install react-icons --save](https://www.npmjs.com/package/react-icons)
-
+2. actualizar instalacion proyectos npm install -g npm-check-updates, ncu, ncu --upgrade,npm i
+ [npm install -g npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 
 # post postman
 

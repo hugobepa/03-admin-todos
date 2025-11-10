@@ -150,3 +150,4 @@ export async function GET(request: Request) {
 ````
 
 12. Ejecutar el SEED en postman para prueba [prueba para instalacion](localhost:3000/api/seed)
+http://localhost:3000/api/seed
