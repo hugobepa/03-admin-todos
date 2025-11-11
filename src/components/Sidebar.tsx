@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { CiBellOn, CiBookmarkCheck, CiChat1, CiLogout, CiMenuBurger, CiSearch } from 'react-icons/ci';
-import moduleName, { IoCalendar, IoCalendarOutline, IoCheckboxOutline, IoListOutline } from 'react-icons/io5'
+import moduleName, { IoBackspaceOutline, IoBasketOutline, IoCalendar, IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline } from 'react-icons/io5'
 import { SidebarItem } from './SidebarItem';
 import { WidgetItem } from '@/components';
 
@@ -28,6 +28,17 @@ const menuItems:Item[] =[
     path: '/dashboard/server-todos',
     title: 'Server Actions'
   },
+   {
+    icon: <IoCodeWorkingOutline/>,
+    path: '/dashboard/cookies',
+    title: 'cookies'
+  },
+   {
+    icon: <IoBasketOutline/>,
+    path: '/dashboard/products',
+    title: 'productos'
+  },
+  
 ]
 
 export const Sidebar = () => {

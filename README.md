@@ -42,7 +42,6 @@ npx prisma generate
  2. Pagina oficial postgres + prisma [next + prisma +postgres](https://vercel.com/guides/nextjs-prisma-postgres)
  3. prisma pagination next [next + prisma + pagination](https://www.prisma.io/docs/orm/prisma-client/queries/pagination)
  4. route cookies next [next + route +cookies](https://nextjs.org/docs/app/api-reference/file-conventions/route)
-5. validacion POST route esquemas yup [validacion + post + route](https://www.npmjs.com/package/yup)
 6. prisma client reference[prisma+client](https://www.prisma.io/docs/orm/reference/prisma-cli-reference)
 
 #prisma mongo
@@ -59,7 +58,12 @@ npx prisma generate
 2. next server functions [next server functions](https://nextjs.org/docs/app/getting-started/updating-data)
 2. next server actions mutating data [serverAction mutating data](https://nextjs.org/learn/dashboard-app/mutating-data)
 2. next useoptimistic [use optimistic next](https://nextjs.org/docs/app/getting-started/updating-data#experimental-useoptimistic)
-2. next route segment config "export const dynamic = 'force-dynamic',export const revalidate = 0"[route config next](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config) 
+2. next route segment config "export const dynamic = 'force-dynamic',export const revalidate = 0"[route config next](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config)
+2. next cookies lado servidor [cookies lado servidor](https://nextjs.org/docs/app/api-reference/functions/cookies)
+
+#paquetes instalar
+2. cookies next client side [npm install --save cookies-next@latest](https://www.npmjs.com/package/cookies-next)
+5. validacion POST route esquemas yup [validacion + post + route](https://www.npmjs.com/package/yup)
 
 #otros
 2. reacts icons [npm install react-icons --save](https://www.npmjs.com/package/react-icons)
