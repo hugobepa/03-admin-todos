@@ -1,22 +1,33 @@
 //https://next-auth.js.org/getting-started/example
+//https://next-auth.js.org/v3/adapters/prisma
+import prisma from "@/lib/prisma";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import NextAuth, { NextAuthOptions } from "next-auth"
+import { Adapter } from "next-auth/adapters";
 import GithubProvider from "next-auth/providers/github"
+import GoogleProvider from "next-auth/providers/google"
 
 
 
 export const authOptions:NextAuthOptions = {
   // Configure one or more authentication providers
+  //adapter: PrismaAdapter(prisma) as Adapter,
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID ?? '',
       clientSecret: process.env.GITHUB_SECRET ?? '',
     }),
+
+    GoogleProvider({
+    clientId: process.env.GOOGLE_CLIENT_ID ?? '',
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
+  })
     // ...add more providers here
   ],
 }
 
 //export default NextAuth(authOptions)
-const handler = NextAuth(authOptions);
-export {handler as GET, handler as Post};
+    const handler = NextAuth(authOptions);
+    export { handler as GET, handler as POST };
 
 
