@@ -82,11 +82,23 @@ fotoPerfil/settings
    -------
    http://localhost:3000/api/auth/signin
    -------           
-            
+    ----------------        
    ----usuarios BBDD prisma ----
 
    https://www.npmjs.com/package/@auth/prisma-adapter
    https://next-auth.js.org/v3/adapters/prisma
+   https://authjs.dev/getting-started/adapters/prisma
 
    npm install @prisma/client @next-auth/prisma-adapter
     npm install prisma --save-dev
+    
+    https://next-auth.js.org/v3/adapters/prisma
+
+    BBDD conectado solo con VC.( terminal proyecto docker compose up -d)
+    Desconectar tablePlus y npm run dev para hacer estos pasos
+    despues añadir los nuevos modelos tabla  en "schema.prisma".
+    Y ahcer estos comandos en terminal de proyecto
+
+
+    npx prisma migrate dev (authjs)
+    npx prisma generate
