@@ -22,6 +22,8 @@ export default function ProfilePage() {
             <span>{ session?.user?.name ??  'no name'}</span>
              <span>{ session?.user?.email ??  'no email'}</span>
               <span>{ session?.user?.image ??  'no image'}</span>
+              <span>{ session?.user?.id ??  'no UUID'}</span>
+              <span>{ session?.user?.roles?.join(',') ??  ['no-roles']}</span>
       </div>
     </div>
   );

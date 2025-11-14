@@ -38,11 +38,11 @@ revalidatePath('/dashboard/server-todos')
 return updatedTodo;
 }
 
-export const addTodo = async(description: string)=>{
+export const addTodo = async(description: string,userId:string)=>{
 
     try {
 
-        const todo = await prisma.todo.create({ data: {description}})
+        const todo = await prisma.todo.create({ data: {description,userId: '...'}})
         revalidatePath('/dashboard/server-todos')
 
         return todo;
@@ -52,6 +52,15 @@ export const addTodo = async(description: string)=>{
     }
 
 }
+
+export const createTodo = async( description: string, userId: string ) => {
+  const todo = await prisma.todo.create({ data: { description, userId: '...' } });
+  revalidatePath('/dashboard/server-todos');
+
+  return todo;
+}
+
+
 
 export const deleteCompleted = async(): Promise<void>=>{
 

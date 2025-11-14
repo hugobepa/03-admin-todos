@@ -88,6 +88,7 @@ fotoPerfil/settings
    https://www.npmjs.com/package/@auth/prisma-adapter
    https://next-auth.js.org/v3/adapters/prisma
    https://authjs.dev/getting-started/adapters/prisma
+   https://github.com/Klerith/next-admin-todos/blob/fin-seccion-13/prisma/schema.prisma
 
    npm install @prisma/client @next-auth/prisma-adapter
     npm install prisma --save-dev
@@ -102,3 +103,24 @@ fotoPerfil/settings
 
     npx prisma migrate dev (authjs)
     npx prisma generate
+
+---crear propios providers---
+
+https://next-auth.js.org/providers/credentials
+
+npx prisma migrate dev --name password
+npx prisma generate
+
+npm i bcryptjs ( codificar password creacion user) import bcrypt from "bcryptjs";
+npm i --save-dev @types/bcryptjs ( por si da problemas en el import)
+
+---------
+https://www.prisma.io/docs/orm/prisma-schema/data-model/relations
+
+eliminar todos los registros de tabla Todo:
+selecionarlos +Boton derecho eliminar
+ctrl+ r 
+confirmar commit
+
+npx prisma migrate dev --name user_todos
+npx prisma generate
